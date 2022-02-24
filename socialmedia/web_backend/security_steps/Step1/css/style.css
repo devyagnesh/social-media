@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.mt-40 {
+    margin-top: 4rem;
+}
+
+
+.m-40 {
+    margin: 4rem 0;
+}
+
+.container {
+    display: block;
+    width: 136.6rem;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.step-1-wrapper {
+    width: 100%;
+    padding: 0 2rem 2rem 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.8rem 0rem rgba(0, 0, 0, 15%);
+    position: relative;
+}
+
+.profile-image {
+    background-color: rgb(243, 243, 243);
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.5rem solid rgb(15, 82, 186);
+    overflow: hidden;
+}
+
+.profile-image>img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.profile-full-name {
+    text-align: center;
+    margin: 10rem 0 0 0;
+    padding: 2rem 0;
+}
+
+.profile-full-name>h2 {
+    font-family: "Montserrat", "Inter", sans-serif;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+}
+
+.profile_update_button {
+    display: block;
+    margin: 1rem 0rem 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile_update_button>form {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-uploader {
+    margin: 3rem 0;
+    font-size: 2rem;
+    padding: 1.5rem 3rem;
+    border: 0.3rem solid rgb(15, 82, 186);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.profile-uploader>.material-icons {
+    color: rgb(15, 82, 186);
+    margin: 0 1rem 0 0;
+}
+
+.profile-uploader>.text-material {
+    color: rgb(15, 82, 186);
+}
+
+.profile-uploader>input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.profile-uploader:hover {
+    transition: 0.5s ease;
+    background-color: rgb(245, 245, 245);
+}
+
+.profile-updaterBtn {
+    position: absolute;
+    width: 40rem;
+    padding: 1.5rem 3rem;
+    bottom: 0;
+    border: none;
+    outline: none;
+    background-color: #4AA96C;
+    border-radius: 1rem 1rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+.profile-updaterBtn:hover {
+    transition: 0.2s ease;
+    background-color: #3b995c;
+}
+
+.profile-updaterBtn>.material-icons {
+    margin: 0 0 0 1.5rem;
+    font-weight: 700;
+}

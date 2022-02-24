@@ -1,0 +1,154 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+}
+
+#container {
+    width: 136.6rem;
+    max-width: 136.6rem;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem 2rem 0 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.8rem 0rem rgba(0, 0, 0, 15%);
+}
+
+.profile___image {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 15rem;
+    height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.4rem solid rgb(15, 82, 186);
+}
+
+.profile___image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.uname {
+    margin: 8rem 0 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+}
+
+.title {
+    text-align: center;
+}
+
+.title>h2 {
+    font-size: 2.4rem;
+    letter-spacing: -0.1rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+.title>p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
+
+.questions__wrapper {
+    margin: 4rem 0 0 0;
+}
+
+.questions__wrapper>form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions__wrapper>form>select {
+    padding: 1.5rem 3rem;
+    font-family: "Montserrat";
+    text-align: center;
+    outline: none;
+    border: 0.2rem solid rgb(15, 82, 186);
+
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.questions__wrapper>form>input {
+    padding: 1.5rem 2rem 1.5rem 1rem;
+    width: 30rem;
+    margin: 2rem 0;
+    background-color: rgb(245, 245, 245);
+    border: 0.2rem solid rgb(230, 230, 230);
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.questions__wrapper>form>input::placeholder {
+    font-weight: 700;
+    font-family: "Inter", "Montserrat";
+}
+
+.btn_sqa {
+    width: 40rem;
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 1rem 1rem 0 0;
+    margin: 3rem 0 0 0;
+    outline: none;
+    background-color: #4AA96C;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+.btn_sqa>.material-icons {
+    margin-left: 1.5rem;
+    font-weight: 800;
+}
+
+.btn_sqa:hover {
+    transition: 0.2s ease;
+    background-color: #3b995c;
+}

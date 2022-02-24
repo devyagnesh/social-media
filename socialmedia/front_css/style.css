@@ -1,0 +1,392 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #F3F1F5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.height-100 {
+    height: 100% !important;
+}
+
+.btn {
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+}
+
+.space-between {
+    justify-content: space-between !important;
+}
+
+.pad-10 {
+    padding: 1rem !important;
+}
+
+.f-grow-1 {
+    flex-grow: 1;
+}
+
+.w-100 {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.mr-10 {
+    margin-right: 1rem;
+}
+
+.ml-20 {
+    margin-left: 2rem;
+}
+
+.mr-20 {
+    margin-right: 2rem;
+}
+
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 136.6rem;
+    max-width: 136.6rem;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    /* background: gray; */
+}
+
+.wrapper>* {
+    flex-basis: 50%;
+}
+
+.wrapper___logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo___text {
+    font-size: 4.4rem;
+    color: rgb(15, 82, 186);
+}
+
+.wrapper___userInteraction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userInteractLogin {
+    display: block;
+    width: 40rem;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 10%);
+}
+
+.userInteractLogin>form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-group>label {
+    font-size: 1.6rem;
+    color: rgb(3, 3, 3);
+    font-weight: 500;
+    display: block;
+}
+
+.input-wrappers {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(236, 236, 236);
+    padding: 0 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.input-wrappers>.controller {
+    font-family: "Montserrat", "Inter", sans-serif;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.6rem 2rem 1.6rem 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.material-icons {
+    color: rgb(29, 29, 29) !important;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.btn-login {
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    width: 25rem;
+    border-radius: 1rem;
+    background-color: rgb(15, 82, 186);
+    color: #fafafa;
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 10%);
+}
+
+.btn-login:active {
+    transform: translateY(1px);
+    box-shadow: 0 -3px 5px 1px rgba(0, 0, 0, 15%);
+}
+
+.btn-login:focus {
+    transition: transform 0.3s ease;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 15%);
+    background-color: rgb(5, 75, 180);
+}
+
+.frgt-pwd {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.frgt-pwd>a {
+    font-weight: 600;
+    color: rgb(27, 100, 211);
+}
+
+.btn-signup {
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0.5rem;
+    background-color: #10B981;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color: #fafafa;
+}
+
+#signup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+#signup-wrapper.display {
+    visibility: visible;
+    display: flex;
+    transform: scale(1);
+    animation: displays .1s ease-in;
+}
+
+@keyframes displays {
+    0% {
+        display: none;
+        transform: scale(0);
+    }
+
+    100% {
+        display: flex;
+        transform: scale(1);
+    }
+}
+
+.signup-box {
+    width: 43rem;
+    max-width: 43rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 0.6rem;
+}
+
+
+.signup-box___header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-box___header>h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(29, 29, 29);
+    letter-spacing: -0.1rem;
+}
+
+.signup-box___header>h2>p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(255, 103, 43);
+    letter-spacing: normal;
+}
+
+.btn-close {
+    background: transparent;
+}
+
+.select option {
+    text-align: left;
+}
+
+.checkbox-selector {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+
+.checkbox-selector>input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.mark {
+
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.checkbox-selector:hover .mark {
+    background-color: #ccc;
+}
+
+.checkbox-selector input:checked~.row>.mark {
+    background-color: rgb(15, 82, 186);
+}
+
+.mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-selector input:checked~.row>.mark:after {
+    display: block;
+}
+
+.checkbox-selector .mark:after {
+    top: 2.3rem;
+    left: 0.9rem;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.btn-crt {
+    padding: 1.5rem 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 1rem;
+    background-color: #10B981;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    color: #fafafa;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 20%);
+}
+
+.btn-crt:hover {
+    transition: 0.2s ease;
+    background-color: #3f975e;
+}
+
+.btn-crt:active {
+    box-shadow: 0 -0.2rem 0.5rem rgba(0, 0, 0, 20%);
+    transform: translateY(0.2rem);
+}
+
+.alert-notification {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+.alert-bg {
+    background-color: #EF4444;
+    color: #f0f2f5;
+}
+
+.alert-border {
+    border: #FCA5A5 0.1rem solid;
+}
